@@ -25,7 +25,7 @@ public class Encrypter {
                         }
                     }
                 }else{
-//                    cipher += position;
+                    cipher += position;
                 }
             }
         }
