@@ -11,6 +11,6 @@ public class EncrypterTest {
     @Test
     public void encrypt_forWord_String(){
         Encrypter encrypter = new Encrypter();
-        assertEquals("wcfsjtfodf",encrypter.encrypt("verisence",1));
+        assertEquals("wfsjtfodf",encrypter.encrypt("verisence",1));
     }
 }
