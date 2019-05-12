@@ -5,6 +5,6 @@ public class DecrypterTest {
     @Test
     public void dencrypt_forLetter_String(){
         Decrypter decrypter = new Decrypter();
-        assertEquals("w",decrypter.decrypt("v",1));
+        assertEquals("w",decrypter.decrypt("x",1));
     }
 }
