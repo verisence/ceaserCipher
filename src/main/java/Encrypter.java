@@ -7,7 +7,26 @@ public class Encrypter {
         }else{
             for( int i=0; i<testWord.length(); i++) {
                 char position = testWord.charAt(i);
-                cipher += (char)(position+key);
+                if(Character.isLetter(position)){
+                    if(Character.isLowerCase(position)){
+                        char lower = (char)(position+key);
+                        if(lower>'z'){
+                            cipher += (char)(position-(26-key));
+                        }else{
+                            cipher += lower;
+                        }
+                    }
+                    if(Character.isUpperCase(position)){
+                        char upper = (char)(position+key);
+                        if(upper>'Z'){
+                            cipher += (char)(position-(26-key));
+                        }else{
+                            cipher += upper;
+                        }
+                    }
+                }else{
+                    cipher += position;
+                }
             }
         }
 
