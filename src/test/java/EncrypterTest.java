@@ -7,4 +7,10 @@ public class EncrypterTest {
         Encrypter encrypter = new Encrypter();
         assertEquals("w",encrypter.encrypt("v",1));
     }
+
+    @Test
+    public void encrypt_forWord_String(){
+        Encrypter encrypter = new Encrypter();
+        assertEquals("wcfsjtfodf",encrypter.encrypt("verisence",1));
+    }
 }
