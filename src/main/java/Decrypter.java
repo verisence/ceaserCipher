@@ -7,8 +7,22 @@ public class Decrypter {
             for (int i = 0; i < testWord.length(); i++) {
                 char position = testWord.charAt(i);
                 if(Character.isLetter(position)){
-                    char decrypt = (char)(position-key);
-                    decrypted += decrypt;
+                    if(Character.isLowerCase(position)){
+                        char lower = (char)(position-key);
+                        if(lower<'a'){
+                            decrypted += (char)(position+(26-key));
+                        }else{
+                            decrypted += lower;
+                        }
+                    }
+                    if(Character.isUpperCase(position)){
+                        char upper = (char)(position-key);
+                        if(upper<'A'){
+                            decrypted += (char)(position+(26-key));
+                        }else{
+                            decrypted += upper;
+                        }
+                    }
                 }else{
                     decrypted += position;
                 }
