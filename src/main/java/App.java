@@ -17,6 +17,15 @@ public class App {
             String encrypted = encrypter.encrypt(inStr,key);
             System.out.println("The encrypted text is:\n"+encrypted);
 //            System.out.println(encrypted);
+        }else if (response.equals("decrypt")){
+            System.out.println("Enter the sentence you want to decrypt");
+            String inStr = console.readLine();
+            System.out.println("Enter the key to use to decrypt");
+            String keyString = console.readLine();
+            int key = Integer.parseInt(keyString);
+            Decrypter decrypter = new Decrypter();
+            String decrypted = decrypter.decrypt(inStr,key);
+            System.out.println("The decrypted text is:\n"+decrypted);
         }
 
     }
