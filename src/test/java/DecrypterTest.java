@@ -7,4 +7,10 @@ public class DecrypterTest {
         Decrypter decrypter = new Decrypter();
         assertEquals("w",decrypter.decrypt("x",1));
     }
+
+    @Test
+    public void encrypt_forNonLetter_String(){
+        Encrypter encrypter = new Encrypter();
+        assertEquals("wfsjtFodf!",encrypter.encrypt("verisEnce!",1));
+    }
 }
