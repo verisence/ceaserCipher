@@ -13,4 +13,10 @@ public class EncrypterTest {
         Encrypter encrypter = new Encrypter();
         assertEquals("wfsjtfodf",encrypter.encrypt("verisence",1));
     }
+
+    @Test
+    public void encrypt_forCase_String(){
+        Encrypter encrypter = new Encrypter();
+        assertEquals("wfsjtFodf",encrypter.encrypt("verisEnce",1));
+    }
 }
