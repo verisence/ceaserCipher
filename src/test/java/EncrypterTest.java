@@ -19,4 +19,11 @@ public class EncrypterTest {
         Encrypter encrypter = new Encrypter();
         assertEquals("wfsjtFodf",encrypter.encrypt("verisEnce",1));
     }
+
+    @Test
+    public void encrypt_forWrappingZtoA_String(){
+        Encrypter encrypter = new Encrypter();
+        assertEquals("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD",encrypter.encrypt("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",23));
+    }
+
 }
