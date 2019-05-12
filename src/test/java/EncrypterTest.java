@@ -26,4 +26,10 @@ public class EncrypterTest {
         assertEquals("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD",encrypter.encrypt("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG",23));
     }
 
+    @Test
+    public void encrypt_forNonLetter_String(){
+        Encrypter encrypter = new Encrypter();
+        assertEquals("wfsjtFodf!",encrypter.encrypt("verisEnce!",1));
+    }
+
 }
