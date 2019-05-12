@@ -6,8 +6,12 @@ public class Decrypter {
         }else {
             for (int i = 0; i < testWord.length(); i++) {
                 char position = testWord.charAt(i);
-                char decrypt = (char)(position-key);
-                decrypted += decrypt;
+                if(Character.isLetter(position)){
+                    char decrypt = (char)(position-key);
+                    decrypted += decrypt;
+                }else{
+                    decrypted += position;
+                }
             }
         }
         return decrypted;
