@@ -1,5 +1,12 @@
 public class Encrypter {
-    public static String encrypt(String testWord, int key){
+    private int key;
+    private String testWord;
+
+    public  String encrypt(String newTestWord, int newKey){
+
+        testWord = newTestWord;
+        key = newKey;
+
         String cipher = "";
 
         if(key<1 || key>26){

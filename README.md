@@ -19,7 +19,7 @@ Once the program runs, the user has two choices, whether to encrypt or to decryp
 ### Setup
 * To run the application, first install the java development kit from `https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html`
 * Next clone the project using `$ git clone https://github.com/verisence/ceaserCipher/` to your preferred folder.
-* In the command prompt, navigate to /src/main/java/ and run the command `$ javac App.java ; java App`
+* In the command prompt, navigate to src/main/java/ and run the command `$ javac App.java ; java App`
 
 ## Technologies used
 * Java.
