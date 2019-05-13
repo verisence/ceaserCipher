@@ -17,6 +17,6 @@ public class DecrypterTest {
     @Test
     public void decrypt_forCase_String(){
         Decrypter decrypter = new Decrypter();
-        assertEquals("Efrs",decrypter.decrypt("Fgst",1));
+        assertEquals("THE QUICK BROWN FOX JUMPS OVER THE LAZY DoG",decrypter.decrypt("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV AlD",23));
     }
 }
