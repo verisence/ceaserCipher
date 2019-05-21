@@ -24,3 +24,6 @@ Once the program runs, the user has two choices, whether to encrypt or to decryp
 ## Technologies used
 * Java.
 * Gradle(for unit testing).
+
+## License
+LICENSE
